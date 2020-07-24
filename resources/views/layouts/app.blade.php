@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    E-learning System 2
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -58,6 +58,10 @@
                                     <a href="" class="dropdown-item">
                                         Dashboard
                                     </a>
+                                    <hr>
+                                    <a href="{{ route('profile') }}" class="dropdown-item">
+                                        Setting
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -77,6 +81,7 @@
 
         <main class="py-4">
             @yield('content')
+            @yield('script')
         </main>
     </div>
 </body>

@@ -8,12 +8,13 @@
                 <img class="card-img-top" src="https://media.istockphoto.com/vectors/user-icon-human-person-sign-vector-id587957104?k=6&m=587957104&s=170667a&w=0&h=umaeFHgEnWFB-A45hQYZXvrcqKh-2fnsx68pwcWCR1c="
                 style="width: 100%;" alt="Card image cap">
                 <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">
-                        Some quick example text to build on the card title
-                        and make up the bulk of the card's content.
-                    </p>
-                    <a href="#!" class="btn btn-primary">Go somewhere</a>
+                    <h4 class="card-title" style="text-align: center">
+                        {{ $auth->name }}
+                    </h4>
+                    <div class="card-text row">
+                        <p class="col-6" style="text-align:center">Follower</p>
+                        <p class="col-6" style="text-align:center">Followed</p>
+                    </div>
                 </div>
             </div>
             <br><br>
