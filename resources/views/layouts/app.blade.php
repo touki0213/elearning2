@@ -56,7 +56,14 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a href="" class="dropdown-item">
+                                        <img src="https://www.netclipart.com/pp/m/223-2234474_svg-png-icon-dashboard-icon-png.png"
+                                         style="width: 19px" alt="">
                                         Dashboard
+                                    </a>
+                                    <a href="{{ route('categories_list') }}" class="dropdown-item">
+                                        <img src="https://cdn.onlinewebfonts.com/svg/img_510194.png"
+                                         style="width: 15px" alt="">
+                                        Creating quiz(only admin)
                                     </a>
                                     <hr>
                                     <a href="{{ route('profile') }}" class="dropdown-item">
